@@ -67,9 +67,9 @@ The following hosted platforms and enterprise suites provide end-to-end automate
 
 ## ⚡ Open-Source GitHub Projects
 
-The premier open-source frameworks for gradient boosted trees, tabular deep learning ensembles, and model interpretability. Sorted in descending order by **GitHub Star Count**.
+The premier open-source frameworks for gradient boosted trees, tabular deep learning ensembles, and model interpretability. Sorted in descending order by **GitHub Stars_Count**.
 
-| Project | Stars | Primary Focus | Best For | License |
+| Project | GitHub_Stars | Primary Focus | Best For | License |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Scikit-learn](https://github.com/scikit-learn/scikit-learn)** | [![Stars](https://img.shields.io/github/stars/scikit-learn/scikit-learn?style=social&color=white)](https://github.com/scikit-learn/scikit-learn/stargazers) | `HistGradientBoosting` & Classical GBDT | Zero-dependency baseline modeling within standard Python ML pipelines | BSD-3-Clause |
 | **[Apache Spark (MLlib)](https://github.com/apache/spark)** | [![Stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers) | Distributed `GBTClassifier` & `GBTRegressor` | Multi-node cluster training on massive datasets already residing in Spark | Apache-2.0 |
