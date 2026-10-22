@@ -211,3 +211,5 @@ Your support is deeply appreciated! 🚀
 - This is an independent, **community-curated** catalog intended strictly for educational, informational, and research purposes.
 - Framework benchmark rankings and speed claims vary based on hardware architecture (CPU SIMD vs. CUDA architectures), dataset properties (row-to-column ratios, sparsity, categorical cardinality), and hyperparameter tuning regimes.
 - Trademarks, logos, and product names belong to their respective copyright and brand holders.
+# Awesome-Gradient-Boosting-Frameworks
+
