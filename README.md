@@ -42,37 +42,13 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[H2O.ai](https://www.h2o.ai/)**  
-
-  Enterprise AI platform with AutoML, Driverless AI, and the open-source H2O-3 core. H2O-3 includes distributed gradient boosting (XGBoost integration) and is available under Apache 2.0 for self-hosting, while Driverless AI is commercial. Best for organizations that want AutoML on tabular data with a path from open-source experimentation to enterprise deployment.
-
-
-
-- **[DataRobot](https://www.datarobot.com/)**  
-
-  Automated machine learning platform with strong tabular modeling capabilities, including gradient boosting ensembles. Proprietary, enterprise-priced. Best for teams that want AutoML without managing infrastructure, accepting vendor lock-in in exchange for convenience.
-
-
-
-- **[RapidMiner](https://rapidminer.com/)**  
-
-  Visual data science platform with drag-and-drop workflows and built-in gradient boosting operators (XGBoost, LightGBM wrappers). Commercial licensing with a free tier for limited use. Best for analysts who prefer visual pipeline construction over code.
-
-
-
-- **[Alteryx](https://www.alteryx.com/)**  
-
-  Data analytics platform with predictive tools including gradient boosting. Primarily a data preparation and analytics workflow tool with ML extensions. Commercial licensing. Best for organizations already using Alteryx for data blending that want to add predictive modeling without leaving the platform.
-
-
-
-- **[KNIME](https://www.knime.com/)**  
-
-  Open-source data analytics platform with commercial extensions. Provides nodes for XGBoost, LightGBM, and H2O integration within a visual workflow environment. The core platform is free and open-source (GPL), with commercial offerings for enterprise features and support. Best for teams that want visual workflows with the option to self-host the core analytics platform.
-
-
+| Platform | Overview & Gradient Boosting Capabilities | Pricing (Starting Tier) | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[H2O.ai](https://www.h2o.ai/)** | Enterprise AI platform with AutoML, Driverless AI, and the open-source H2O-3 core (distributed gradient boosting / XGBoost integration). Best for teams transitioning from open-source experimentation to enterprise deployment. | Enterprise subscriptions start at ~$25,000/year (Driverless AI single-node) | 90-day free trial on H2O AI Cloud; Driverless AI offers a 21-day public cloud trial license or 2-hour cloud test drive (open-source H2O-3 is free forever under Apache 2.0). |
+| **[DataRobot](https://www.datarobot.com/)** | Automated machine learning platform with strong tabular modeling capabilities and gradient boosting ensembles. Proprietary end-to-end MLOps and AutoML. | Enterprise deployments start at ~$50,000/year | 30-day free trial (capped at shared modeling workers, 15 vector DBs, and 1,000 LLM calls; workspace transitions to read-only upon expiration). |
+| **[Altair RapidMiner](https://rapidminer.com/)** | Visual data science platform with drag-and-drop workflows and built-in gradient boosting operators (XGBoost, LightGBM wrappers). | Professional tiers start at ~$2,500/user/year (or via Altair Units) | Free tier available; strictly capped at 10,000 data rows per process/dataset and 1 logical processor/thread. |
+| **[Alteryx](https://www.alteryx.com/)** | Data analytics and preparation platform with predictive modeling tools including gradient boosting extensions. | Starter Edition starts at $250/user/month ($3,000/user/year, billed annually) | 30-day free trial (Alteryx One platform access; Starter tier capped to 10 users max and 0 scheduled automation runs). |
+| **[KNIME](https://www.knime.com/)** | Open-source data analytics platform with visual workflow environment and nodes for XGBoost, LightGBM, and H2O. | KNIME Community Hub Pro starts at $19/month ($99/month for Team tier) | Free forever Community Hub Personal plan (public spaces, 20 K-AI interactions/month); desktop open-source Analytics Platform is 100% free with no scheduling. |
 
 ## Open-Source GitHub Projects
 
