@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Linear Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#1b263b" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0844" />
+      <stop offset="100%" stop-color="#ffb199" />
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+
+    <linearGradient id="pill-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38ef7d" />
+      <stop offset="100%" stop-color="#11998e" />
+    </linearGradient>
+
+    <linearGradient id="pill-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f857a6" />
+      <stop offset="100%" stop-color="#ff5858" />
+    </linearGradient>
+
+    <linearGradient id="pill-grad-3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+
+    <!-- Drop Glow Filter -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glow-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .glow-circle {
+      animation: pulseGlow 6s ease-in-out infinite alternate;
+    }
+    .flow-line {
+      stroke-dasharray: 8 6;
+      animation: dashMove 20s linear infinite;
+    }
+    .floating-badge {
+      animation: floatBadge 4s ease-in-out infinite alternate;
+    }
+    .floating-badge-2 {
+      animation: floatBadge2 5s ease-in-out infinite alternate;
+    }
+    .tree-node {
+      animation: nodePulse 3s ease-in-out infinite alternate;
+    }
+    @keyframes dashMove {
+      from { stroke-dashoffset: 0; }
+      to { stroke-dashoffset: 200; }
+    }
+    @keyframes pulseGlow {
+      0% { opacity: 0.25; transform: scale(0.95); }
+      100% { opacity: 0.55; transform: scale(1.05); }
+    }
+    @keyframes floatBadge {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-8px); }
+    }
+    @keyframes floatBadge2 {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(8px); }
+    }
+    @keyframes nodePulse {
+      0% { opacity: 0.6; }
+      100% { opacity: 1; }
+    }
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+    }
+    .tag-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+      font-weight: 600;
+      font-size: 13px;
+    }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Background Decorative Glowing Orbs -->
+  <circle cx="150" cy="80" r="130" fill="#00f2fe" opacity="0.12" filter="url(#glow-soft)" class="glow-circle" />
+  <circle cx="1050" cy="280" r="160" fill="#ff0844" opacity="0.1" filter="url(#glow-soft)" class="glow-circle" />
+  <circle cx="980" cy="90" r="120" fill="#38ef7d" opacity="0.08" filter="url(#glow-soft)" class="glow-circle" />
+
+  <!-- Background Animated Flow Lines (Trees / Residual Ensembling Motif) -->
+  <g opacity="0.35">
+    <path class="flow-line" d="M 60,300 C 200,280 250,150 400,160 S 650,260 850,200 S 1100,100 1160,80" fill="none" stroke="url(#accent-cyan)" stroke-width="2" />
+    <path class="flow-line" d="M 40,80 C 220,120 300,240 500,220 S 800,100 950,180 S 1080,290 1160,300" fill="none" stroke="url(#accent-purple)" stroke-width="1.8" />
+  </g>
+
+  <!-- Decision Tree Diagram in Background Right -->
+  <g opacity="0.35" transform="translate(850, 40)">
+    <!-- Tree Branches -->
+    <path d="M 160,30 L 90,90 M 160,30 L 230,90 M 90,90 L 50,160 M 90,90 L 130,160 M 230,90 L 190,160 M 230,90 L 270,160" stroke="#4facfe" stroke-width="2" stroke-linecap="round" fill="none" />
+    <!-- Tree Nodes -->
+    <circle cx="160" cy="30" r="10" fill="#00f2fe" class="tree-node" />
+    <circle cx="90" cy="90" r="8" fill="#38ef7d" class="tree-node" />
+    <circle cx="230" cy="90" r="8" fill="#38ef7d" class="tree-node" />
+    <circle cx="50" cy="160" r="6" fill="#ffb199" class="tree-node" />
+    <circle cx="130" cy="160" r="6" fill="#ffb199" class="tree-node" />
+    <circle cx="190" cy="160" r="6" fill="#ffb199" class="tree-node" />
+    <circle cx="270" cy="160" r="6" fill="#ffb199" class="tree-node" />
+  </g>
+
+  <!-- Interactive/Floating Framework Feature Pills (Kept to sides/bottom so center is pristine) -->
+  <g class="floating-badge" transform="translate(60, 280)">
+    <rect width="130" height="34" rx="17" fill="url(#pill-grad-1)" opacity="0.9" />
+    <text x="65" y="22" fill="#ffffff" text-anchor="middle" class="tag-text">⚡ LightGBM</text>
+  </g>
+
+  <g class="floating-badge-2" transform="translate(210, 280)">
+    <rect width="130" height="34" rx="17" fill="url(#pill-grad-3)" opacity="0.9" />
+    <text x="65" y="22" fill="#ffffff" text-anchor="middle" class="tag-text">🚀 XGBoost</text>
+  </g>
+
+  <g class="floating-badge" transform="translate(360, 280)">
+    <rect width="130" height="34" rx="17" fill="url(#pill-grad-2)" opacity="0.9" />
+    <text x="65" y="22" fill="#ffffff" text-anchor="middle" class="tag-text">🐱 CatBoost</text>
+  </g>
+
+  <g class="floating-badge-2" transform="translate(510, 280)">
+    <rect width="150" height="34" rx="17" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1" />
+    <text x="75" y="22" fill="#e0e6ed" text-anchor="middle" class="tag-text">🎯 Scikit-Learn</text>
+  </g>
+
+  <g class="floating-badge" transform="translate(680, 280)">
+    <rect width="130" height="34" rx="17" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1" />
+    <text x="65" y="22" fill="#e0e6ed" text-anchor="middle" class="tag-text">📊 AutoML &amp; GBDT</text>
+  </g>
+
+  <!-- Main Header & Hero Text (Foreground - High Contrast & Unobscured) -->
+  <g transform="translate(60, 85)">
+    <!-- Sub-heading Pill -->
+    <rect x="0" y="0" width="280" height="28" rx="14" fill="#00f2fe" fill-opacity="0.15" stroke="#00f2fe" stroke-opacity="0.4" stroke-width="1" />
+    <text x="140" y="19" fill="#00f2fe" font-size="12" font-weight="700" letter-spacing="1.2" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">CURATED ML REPOSITORY</text>
+
+    <!-- Main Title -->
+    <text x="0" y="78" fill="#ffffff" font-size="44" class="title-text">
+      Awesome <tspan fill="url(#accent-cyan)">Gradient Boosting</tspan>
+    </text>
+    <text x="0" y="124" fill="#f0f4f8" font-size="34" class="title-text">
+      Frameworks &amp; Tabular ML Ecosystem 🌲
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="158" fill="#94a3b8" font-size="16" class="subtitle-text">
+      The definitive directory of high-performance GBDT libraries, AutoML platforms, GPU accelerators &amp; tools
+    </text>
+  </g>
+</svg>
